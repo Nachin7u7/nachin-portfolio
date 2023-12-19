@@ -1,45 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="no-js">
 
 <head>
   <base target="_blank">
   <meta charset="UTF-8" />
   <title>Ricardo Valencia Dev</title>
-  <link rel="shortcut icon" type="image/png" href="assets/webLogo.png" >
+  <link rel="shortcut icon" type="image/png" href="assets/webLogo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"
     type="text/css">
-  <!-- remember, jQuery is completely optional -->
-  <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
   <script type="text/javascript" src="js/jquery.particleground.js"></script>
-  <script type="text/javascript" src="js/demo.js"></script> 
+
+  <style>
+    /* Estilo para la sección de las imágenes */
+    #portfolio {
+      background-color: #000;
+      color: #fff;
+      /* Color del texto en la sección de imágenes */
+    }
+
+    /* Estilo para las imágenes en la sección de proyectos */
+    .project {
+      display: flex;
+      align-items: center;
+      margin: 20px;
+    }
+
+    .project-image {
+      max-width: 600px;
+      /* Establece el ancho máximo de las imágenes */
+      height: auto;
+      /* Permite que la altura se ajuste automáticamente manteniendo la proporción original */
+      margin-right: 20px;
+      /* Espaciado entre las imágenes y el texto de la descripción */
+    }
+
+    /* Estilo para la sección de intro (nombre y botones) */
+    #intro {
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      /* Asegura que esté por encima de otros elementos */
+    }
+
+    #intro h2 {
+      font-family: 'Syncopate', 'Courier New', Courier, monospace;
+      font-weight: 10;
+      text-transform: uppercase;
+      font-size: 50px;
+      color: #ffffff;
+      letter-spacing: 0.05em;
+    }
+
+    #intro hr {
+      width: 50%;
+      background-color: #E83951;
+      border-color: #E83951;
+    }
+
+    #intro a {
+      color: #fff;
+      margin: 0 10px;
+    }
+
+    /* Agregado para ajustar el espacio después de #intro */
+    body {
+      margin-top: 100px;
+    }
+  </style>
+
 </head>
 
 <body>
 
+  <div id="intro">
+    <h2>Ricardo I. Valencia<a href="deedy.pdf" style="color:white;"></a></h2>
+    <hr style="width: 50%; background-color: #E83951; border-color: #E83951;">
+    <a href="https://www.linkedin.com/in/ricardo-ignacio-valencia-sauma-52500b219/" style="color: #fff;"><i
+        class="fab fa-linkedin" style="font-size: 2em;"></i></a>
+    <a href="https://www.facebook.com/#/" style="color: #fff;"><i class="fab fa-facebook"
+        style="font-size: 2em;"></i></a>
+    <a href="https://github.com/#/" style="color: #fff;"><i class="fab fa-github" style="font-size: 2em;"></i></a>
+  </div>
+
   <div id="particles">
-    <div id="intro">
-      <h2 style="font-family: 'Syncopate', 'Courier New', Courier, monospace; font-weight: 10;">Ricardo I. Valencia<a
-          href="deedy.pdf" style="color:white;"></a></h2>
-      <hr style="width: 50%; background-color: #E83951; border-color: #E83951;">
-      <a href="https://www.linkedin.com/in/ricardo-ignacio-valencia-sauma-52500b219/" style="color: white;"><i class="fab fa-linkedin"
-          style="font-size: 2em;"></i></a>
-      &nbsp
-      <a href="https://www.facebook.com/#/" style="color: white;"><i class="fab fa-facebook"
-          style="font-size: 2em;"></i></a>
-      &nbsp
-      <a href="https://github.com/#/" style="color: white;"><i class="fab fa-github" style="font-size: 2em;"></i></a>
+    <!-- Contenido de partículas -->
+  </div>
+
+  <div id="portfolio">
+    <div class="project">
+      <img src="assets/pink.jpg" alt="Proyecto 1" class="project-image">
+      <div class="description">
+        <h3>Proyecto 1</h3>
+        <p>Descripción del Proyecto 1. Puedes agregar más detalles aquí.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="assets/rambo.jpg" alt="Proyecto 2" class="project-image">
+      <div class="description">
+        <h3>Proyecto 2</h3>
+        <p>Descripción del Proyecto 2. Puedes agregar más detalles aquí.</p>
+      </div>
     </div>
   </div>
 
-  <div id="black">
-    <h2 style="font-family: 'Syncopate', sans-serif; font-weight: 10;">Hello<a href="deedy.pdf" style="color: white;"
-        ;></a>
-
-    </h2>
+  <div id="footer">
+    <!-- Contenido del pie de página, como tu correo y redes sociales -->
   </div>
+
 </body>
 
 </html>
